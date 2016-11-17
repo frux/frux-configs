@@ -2,7 +2,7 @@
 module.exports = {
 	rules: {
 		'at-rule-blacklist': [],
-		'at-rule-empty-line-before': 'always',
+		'at-rule-empty-line-before': ['always', {ignore: ['after-comment']}],
 		'at-rule-name-case': 'lower',
 		'at-rule-name-newline-after': null,
 		'at-rule-name-space-after': 'always',
