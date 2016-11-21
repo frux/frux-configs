@@ -2,7 +2,7 @@
 module.exports = {
 	rules: {
 		'at-rule-blacklist': [],
-		'at-rule-empty-line-before': ['always', {ignore: ['after-comment']}],
+		'at-rule-empty-line-before': 'always',
 		'at-rule-name-case': 'lower',
 		'at-rule-name-newline-after': null,
 		'at-rule-name-space-after': 'always',
@@ -103,7 +103,7 @@ module.exports = {
 		'property-no-unknown': true,
 		'property-no-vendor-prefix': null,
 		'root-no-standard-properties': null,
-		'rule-nested-empty-line-before': ['always', {except: ['first-nested']}],
+		'rule-nested-empty-line-before': ['always', {except: ['first-nested'], ignore: ['after-comment']}],
 		'rule-non-nested-empty-line-before': 'always',
 		'selector-attribute-brackets-space-inside': 'never',
 		'selector-attribute-operator-blacklist': [],
@@ -151,9 +151,5 @@ module.exports = {
 		'value-list-comma-space-after': 'always',
 		'value-list-comma-space-before': 'never',
 		'value-no-vendor-prefix': null
-	},
-	ignoreFiles: [
-		'./static',
-		'./bemy.templates'
-	]
+	}
 };
