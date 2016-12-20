@@ -25,6 +25,7 @@ module.exports = {
 		'.json'
 	],
 	rules: {
+		'quotes': ['error', 'single', {'avoidEscape': true}],
 		'operator-linebreak': [
 			'error',
 			'after',
@@ -33,6 +34,22 @@ module.exports = {
 					'?': 'before',
 					':': 'before'
 				}
+			}
+		],
+		'generator-star-spacing': ['error', 'after'],
+		'react/no-danger': 0,
+		'react/forbid-component-props': 0,
+		'react/no-did-update-set-state': 0,
+		'no-floating-decimal': 0,
+		'spaced-comment': [
+			'error',
+			'always',
+			{
+				"markers": [
+				":",
+				"?:",
+				"::"
+				]
 			}
 		]
 	}
