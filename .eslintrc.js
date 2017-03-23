@@ -22,6 +22,8 @@ module.exports = {
 	],
 	rules: {
 		'quotes': ['error', 'single', {'avoidEscape': true}],
+		'generator-star-spacing': ['error', 'after'],
+		'capitalized-comments': 0,
 		'operator-linebreak': [
 			'error',
 			'after',
@@ -32,10 +34,6 @@ module.exports = {
 				}
 			}
 		],
-		'generator-star-spacing': ['error', 'after'],
-		'react/no-danger': 0,
-		'react/forbid-component-props': 0,
-		'react/no-did-update-set-state': 0,
 		'no-floating-decimal': 0,
 		'spaced-comment': [
 			'error',
@@ -47,6 +45,11 @@ module.exports = {
 				"::"
 				]
 			}
-		]
+		],
+		'react/no-danger': 0,
+		'react/forbid-component-props': 0,
+		'react/no-did-update-set-state': 0,
+		'react/jsx-sort-props': 0,
+		'react/require-default-props': 0
 	}
 }
