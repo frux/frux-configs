@@ -20,10 +20,6 @@ module.exports = {
 	plugins: [
 		'react'
 	],
-	ext: [
-		'.js',
-		'.jsx'
-	],
 	rules: {
 		'quotes': ['error', 'single', {'avoidEscape': true}],
 		'operator-linebreak': [
